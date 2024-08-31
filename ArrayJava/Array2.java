@@ -6,5 +6,9 @@ public class Array2 {
         } else {
             System.out.println("no! given integer is not present");
         }
+        System.out.println(arr.length);
+
+        String array[]={"pushpa","Neha","Ayushi"};
+        System.out.println(array[1]);
     }
 }

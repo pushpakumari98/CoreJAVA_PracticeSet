@@ -1,4 +1,19 @@
-// Design a BankAccount class with attributes accountNumber, accountHolder, and
-// balance. Include methods deposit() and withdraw() to modify the balance.
-// Create an instance of the class,perform some deposits and withdrawals, and
-// print the final balance.
+class Circle{
+    double radius;
+
+    double calculateArea(){
+        return 3.14*radius*radius;
+    }
+    double calculatePer(){
+        return 4*3.14*radius;
+    }
+}
+
+public class CustomClass6{
+    public static void main(String[] args) {
+        Circle obj=new Circle();
+        obj.radius=78;
+        System.out.println(obj.calculatePer());
+        System.out.println(obj.calculateArea());
+    }
+}

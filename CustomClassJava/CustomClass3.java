@@ -1,25 +1,24 @@
-//Create a Rectangle class with attributes length and width. Implement methods calculateArea() and calculatePerimeter() to compute the area and perimeter of the rectangle. Create an instance of the class, set its dimensions, and print the area and perimeter.
 
-class Rectangle {
-    float length;
-    float width;
+class Square{
+    double area;
+    double per;
+    int side;
 
-    double calculateArea() {
-        return length * width;
+    public double calculateArea(){
+        return side*side;
     }
-
-    double calculatePerimeter() {
-        return 2 * (length + width);
+    public double calculatePer(){
+        return 4*side;
     }
 }
 
-public class CustomClass3 {
-    public static void main(String[] args) {
-        Rectangle obj = new Rectangle();
-        obj.length = 3.4F;
-        obj.width = 56.7F;
-        System.out.println(obj.calculateArea());
-        System.out.println(obj.calculatePerimeter());
-    }
 
+public class CustomClass3{
+    public static void main(String[] args) {
+        Square obj=new Square();
+        obj.side=25;
+        System.out.println(obj.calculatePer());
+        System.out.println(obj.calculateArea());
+
+    }
 }
